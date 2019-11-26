@@ -1,40 +1,75 @@
 body{
+  color: rgba(0,0,0,0.87);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
 
 header{
-  display: flex;
+  height: 30px;
+  width: 100%;
   ul{
-
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    height:30px;
+    margin: 10px 20px;
+    li{
+      list-style-type: none;
+      line-height: 30px;
+      margin: 0 10px;
+      width: 50px;
+    }
+    li.icons{
+      width: 20px;
+      svg {
+      width: 15px;
+      }
+    }
   }
 }
-li{
-  list-style-type: none;
-}
 
-#searchbox{
-  
-  .buttons{
-    display: flex;
-    button{
-      color: #5F6368;
-      background: #f2f2f2;
-      border: none;
-      height: 30px;
-      margin: 15px;
+main{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  #searchbox{
+    form input{
+      height: 46px;
+    }
+    .buttons{
+      display: flex;
+      button{
+        color: #5F6368;
+        background: #f2f2f2;
+        border: none;
+        height: 30px;
+        margin: 15px;
+      }
     }
   }
 }
 
 footer{
+  position: absolute;
   background-color: #f2f2f2;
+  bottom: 0;
   color: rgba(0,0,0,.54);
   width: 100%;
-}
+  div{
+    line-height: 40px;
+  }
+  div#info{
+    display: flex;
+    justify-content: space-between;
 
-header,footer ul,li{
-  display: inline-block;
+    ul{
+    }
+    li{
+      display: inline-block;
+    }
+  }  
 }
 
 footer a{
