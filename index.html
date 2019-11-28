@@ -20,16 +20,18 @@
 
   <main>
     <div id="logo">
-      <h1><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google"></h1>
+      <h1><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" srcset="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png 1x, https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png 2x" alt="Google"></h1>
     </div>
 
     <div id="searchbox">
+      <div id="icon_mag"></div>
       <form action=""><input type="text"></form>
-      <div class="buttons">
-        <button type="submit">Google Search</button>
-        <button type="">I'm Feeling Lucky</button>
-      </div>
+      <div id="icon_mic"></div>
     </div>
+    <div class="buttons">
+        <input aria-label="Google Search" type="submit" value="Google Search">
+        <input aria-label="I'm Feeling Lucky" type="submit" value="I'm Feeling Lucky">
+      </div>
   </main>
 
   <footer>
